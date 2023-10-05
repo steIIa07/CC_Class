@@ -1,5 +1,5 @@
 /*
-quiz2.cpp
+ex01.cc
 概要：課題１ ファーストネーム、ミドルネーム、ラストネームを入力し、
      それらを整形して表示するプログラム
 Author: Issei Ichikawa
@@ -21,10 +21,10 @@ int main() {
     cin >> last_name;
 
     // フレームの作成
-    string frame_line(first_name.size() + middle_name.size() + last_name.size() + 14, '*');
+    const string frame_line(first_name.size() + middle_name.size() + last_name.size() + 14, '*');
     string space(first_name.size() + middle_name.size() + last_name.size() + 10, ' ');
     space = "* " + space + " *";
-    string out = "* Hello, " + first_name + " " + middle_name + " " + last_name + "! *";
+    const string out = "* Hello, " + first_name + " " + middle_name + " " + last_name + "! *";
 
     // 最終的な出力
     cout << frame_line << endl;

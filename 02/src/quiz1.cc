@@ -1,3 +1,10 @@
+/*
+quiz1.cc
+概要：1~100うち，3の倍数または3が含まれる数を出力するプログラム
+Author: Issei Ichikawa
+Date: 2023-10-05
+*/
+
 #include <iostream>
 
 bool isMultipleOfThree(int n) {
