@@ -36,80 +36,20 @@ int main() {
     return 0;
 }
 
-// 実行結果
+// 動作確認
 
 // 5. 名前が極端に長い場合
-// 表示に問題はあるが、一応は意図通りに動作している
-/*
-Please input your first name
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-Please input your middle name
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-Please input your last name
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
-*                                                                                                                                   
-                                                                                                                                    
-                                                                                                                                    
-                                                                                                                                    
-                                                                                                                                    
-                         *
-* Hello, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc! *
-*                                                                                                                                   
-                                                                                                                                    
-                                                                                                                                    
-                                                                                                                                    
-                                                                                                                                                             *
-**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
-*/
+// 文が長いため、表示に問題はあるが、正しく表示される
 
-// 6. 名前が文字が英語以外のとき
-// 6.1. 日本語 意図通りに動作している
-/*
-Please input your first name
-伊知川  
-Please input your middle name
--   
-Please input your last name
-壱星
-*************************
-*                       *
-* Hello, 伊知川 - 壱星! *
-*                       *
-*************************
-*/
+// 6. 名前が文字が英語以外のとき、３つの言語で実行
+// 6.1. 日本語 正しく表示される                     *
+// * Hello, 伊知川 - 壱星! *
 
-// 6.4 韓国語
-// ？になってしまう
-/*
-Please input your first name
-이
-Please input your middle name
--
-Please input your last name
-지훈
-******************
-*                *
-* Hello, ? - ??! *
-*                *
-******************
-*/
+// 6.2 韓国語 ？になってしまう
+// * Hello, ? - ??! *
 
 // 6.3 ロシア語
 // 表示されない
-/*
-Please input your first name
-Иванов 
-Please input your middle name
--
-Please input your last name
- Иван
-*************************
-*                       *
-* Hello,  - ! *
-*                       *
-*************************
-*/
+// Иванов - Иван を入力 -> * Hello,  - ! *
+
+// 日本語・英語は正しく表示されるが、それ以外は正しく表示されない
