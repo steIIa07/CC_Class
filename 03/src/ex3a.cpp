@@ -14,6 +14,8 @@ int main() {
     int numOfTimes; // N, Tに相当
     vector<int> X;
 
+    X.clear();
+
     cin >> numOfTimes; // Nを読み込み
 
     // N個の整数X_iを読み込み、vector Xに格納

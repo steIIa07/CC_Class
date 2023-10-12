@@ -14,6 +14,8 @@ int main() {
     int T; // T回の操作をする
     vector<int> X;
 
+    X.clear();
+
     cin >> T;
 
     for(int j = 0; j < T; ++j) {

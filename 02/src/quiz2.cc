@@ -7,11 +7,13 @@ Date: 2023-10-05
 
 #include <iostream>
 
+using namespace std;
+
 int main() {
     int count;
-    std::string s;
-    while(std::cin >> s) {
+    string s;
+    while(cin >> s) {
         count++;
     }
-    std::cout << count << std::endl;
+    cout << count << endl;
 }

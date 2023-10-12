@@ -16,6 +16,8 @@ int main() {
     vector<int> b;
     int input;
 
+    b.clear();
+
     // 入力 
     while(cin >> input){
         b.push_back(input);
